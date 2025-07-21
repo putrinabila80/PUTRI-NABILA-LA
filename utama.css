@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif; /* Font yang lebih tegas */
+}
+
+body {
+  background: linear-gradient(to right, #2e3d31, #4d6e4b); /* Hijau tentara dengan sedikit gradasi */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4); /* Transparan dengan latar belakang hitam */
+} 
+
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Bayangan lebih tegas */
+  font-weight: bold;
+}
+
+.roles {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #4b5320; /* Warna hijau tentara */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  padding: 40px 25px;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #fff; /* Border putih agar menonjol */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); /* Bayangan lebih tebal saat hover */
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase; /* Menambahkan kesan tegas */
+  letter-spacing: 1px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #ddd; /* Warna teks lebih terang untuk kontras */
+}
+
+.card:nth-child(1) h2 {
+  color: #ffffff; /* Warna pink untuk peran pertama */
+}
+
+.card:nth-child(2) h2 {
+  color: #4caf50; /* Warna hijau untuk peran kedua */
+}
+
+.card:nth-child(3) h2 {
+  color: #ff9800; /* Warna oranye untuk peran ketiga */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Background Image for Military Feel */
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .roles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Background Gambar */
+.bg-image {
+  background-image: url('gambar/bg2.jpg'); /* Ganti dengan path gambar kamu */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
